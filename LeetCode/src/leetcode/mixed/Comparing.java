@@ -20,7 +20,7 @@ public class Comparing {
 
         joinRequests
                 .entrySet().stream()
-                .sorted(Comparator.comparing(o -> o.getValue()))
+                .sorted(Comparator.comparing(Map.Entry::getValue))
                 .forEachOrdered(entry ->map.put(entry.getKey(), entry.getValue()));
 
         return map;
