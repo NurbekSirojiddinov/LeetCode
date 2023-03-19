@@ -19,10 +19,11 @@ public class SmallestMissingNonNegativeInteger {
         }
         Arrays.sort(nums);
 
-        for(int i = 0; i < nums.length; i++) {
-            if(nums[i] != missingNum) {
+        for (int num : nums) {
+            if (num != missingNum) {
                 return missingNum;
-            } missingNum++;
+            }
+            missingNum++;
         }
         return missingNum;
     }
