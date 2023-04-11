@@ -5,10 +5,11 @@ public class RemovingStarsFromAString {
         StringBuilder stringBuilder = new StringBuilder();
 
         for (int i = 0; i < s.length(); i++) {
-            if (s.charAt(i) == '*') {
+            char element = s.charAt(i);
+            if (element == '*') {
                 stringBuilder.deleteCharAt(stringBuilder.length() - 1);
             } else {
-                stringBuilder.append(s.charAt(i));
+                stringBuilder.append(element);
             }
         }
         return stringBuilder.toString();
