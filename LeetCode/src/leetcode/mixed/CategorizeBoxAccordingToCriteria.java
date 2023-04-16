@@ -21,13 +21,7 @@ public class CategorizeBoxAccordingToCriteria {
             return "Neither";
         }
 
-        if (!heavy.equals("Heavy") && bulky.equals("Bulky")) {
-            return "Bulky";
-        }
-        if (heavy.equals("Heavy") && !bulky.equals("Bulky")) {
-            return "Bulky";
-        }
-        return "";
+        return "Bulky";
     }
 
     public static void main(String[] args) {
