@@ -1,4 +1,4 @@
-package leetcode.contest;
+package leetcode.mixed;
 
 public class IncrementSubmatricesByOne {
 }

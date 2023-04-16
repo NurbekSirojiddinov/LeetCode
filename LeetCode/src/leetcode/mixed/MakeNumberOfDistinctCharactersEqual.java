@@ -1,4 +1,4 @@
-package leetcode.contest;
+package leetcode.mixed;
 
 import java.util.HashMap;
 import java.util.LinkedHashMap;

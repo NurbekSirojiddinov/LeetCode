@@ -1,4 +1,4 @@
-package leetcode.contest;
+package leetcode.mixed;
 
 public class CategorizeBoxAccordingToCriteria {
     public static String categorizeBox(int length, int width, int height, int mass) {
