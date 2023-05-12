@@ -1,7 +1,5 @@
 package leetcode.tree;
 
-import java.util.Stack;
-
 public class SumOfLeftLeaves {
     int sum = 0;
 
