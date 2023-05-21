@@ -1,4 +1,4 @@
-package leetcode.contest;
+package leetcode.daily;
 
 import java.util.ArrayList;
 import java.util.HashMap;

@@ -1,4 +1,4 @@
-package leetcode.contest;
+package leetcode.daily;
 
 public class DetermineTheWinnerOfABowlingGame {
     public int isWinner(int[] player1, int[] player2) {
