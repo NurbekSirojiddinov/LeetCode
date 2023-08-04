@@ -37,7 +37,7 @@ public class LetterCombinationsOfAPhoneNumber {
 
     public static void main(String[] args) {
         LetterCombinationsOfAPhoneNumber obj = new LetterCombinationsOfAPhoneNumber();
-        List<String> list = obj.letterCombinations("999999999999");
+        List<String> list = obj.letterCombinations("999999");
         System.out.println(list.size());
 
     }
