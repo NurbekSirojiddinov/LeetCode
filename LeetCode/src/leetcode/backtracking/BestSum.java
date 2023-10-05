@@ -32,7 +32,6 @@ public class BestSum {
         for (int j : arr) {
             list.add(j);
             List<Integer> res  = backtrack(list, target - j);
-         //   list.remove(list.size() - 1);
             if (res != null && (list1 == null || res.size() < list1.size())) {
                 list1 = new ArrayList<>(res);
             }
