@@ -12,10 +12,10 @@ class CanConstructString {
 
     public boolean wordBreak(String s, List<String> wordDict) {
         this.wordBank = wordDict;
-        return backtrack(s);
+        return dp(s);
     }
 
-    public boolean backtrack(String target) {
+    public boolean dp(String target) {
         if (target.length() == 0) {
             flag = true;
             return true;
@@ -25,7 +25,7 @@ class CanConstructString {
         boolean res = false;
         for (String s : wordBank) {
             if (target.startsWith(s)) {
-                res = backtrack(target.substring(s.length()));
+                res = dp(target.substring(s.length()));
             }
         }
         memo.put(target, res);

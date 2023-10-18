@@ -22,14 +22,14 @@ public class LetterCombinationsOfAPhoneNumber {
         return bt(new StringBuilder(), 0);
     }
 
-    public List<String> bt(StringBuilder str, int st) {
+    public List<String> bt(StringBuilder str, int index) {
         if (str.length() == arr.length) {
             ans.add(str.toString());
             return ans;
         }
-        for (int j = 0; j < arr[st].length(); j++) {
-            str.append(arr[st].charAt(j));
-            bt(str, st + 1);
+        for (int j = 0; j < arr[index].length(); j++) {
+            str.append(arr[index].charAt(j));
+            bt(str, index + 1);
             str.deleteCharAt(str.length() - 1);
         }
         return ans;
@@ -37,8 +37,7 @@ public class LetterCombinationsOfAPhoneNumber {
 
     public static void main(String[] args) {
         LetterCombinationsOfAPhoneNumber obj = new LetterCombinationsOfAPhoneNumber();
-        List<String> list = obj.letterCombinations("999999");
+        List<String> list = obj.letterCombinations("999999999");
         System.out.println(list.size());
-
     }
 }
