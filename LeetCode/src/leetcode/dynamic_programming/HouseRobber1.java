@@ -1,5 +1,7 @@
 package leetcode.dynamic_programming;
 
+import java.time.Instant;
+
 public class HouseRobber1 {
     public static int rob(int[] houses) {
 
@@ -14,5 +16,6 @@ public class HouseRobber1 {
 
     public static void main(String[] args) {
         System.out.println(rob(new int[]{1, 2, 3, 4, 5,7}));
+        System.out.println(Instant.now());
     }
 }
