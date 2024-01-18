@@ -35,8 +35,6 @@ public class MinimumNumberOfOperationsToMakeAllArrayElementsEqualTo1 {
     }
 
     public int findGCD(int a, int b) {
-        if (a % b == 0) return b;
-        if (b % a == 0) return a;
         while (a != b) {
             if (a > b) {
                 a -= b;
@@ -47,8 +45,17 @@ public class MinimumNumberOfOperationsToMakeAllArrayElementsEqualTo1 {
         return a;
     }
 
+    public int gcd(int p, int q) {
+        if(q == 0) return p;
+        int r = p % q;
+
+        return gcd(q, r);
+    }
+
     public static void main(String[] args) {
         MinimumNumberOfOperationsToMakeAllArrayElementsEqualTo1 to1 = new MinimumNumberOfOperationsToMakeAllArrayElementsEqualTo1();
         System.out.println(to1.minOperations(new int[]{2, 6, 3, 4}));
+        System.out.println(new MinimumNumberOfOperationsToMakeAllArrayElementsEqualTo1().findGCD(40, 24));
+        System.out.println(new MinimumNumberOfOperationsToMakeAllArrayElementsEqualTo1().gcd(40, 24));
     }
 }

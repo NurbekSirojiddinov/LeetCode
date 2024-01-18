@@ -29,4 +29,5 @@ public class DecodeWays {
        Collections.sort(list);
        return list;
     }
+
 }
