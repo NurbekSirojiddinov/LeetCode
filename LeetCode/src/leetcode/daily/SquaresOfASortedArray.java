@@ -29,5 +29,8 @@ public class SquaresOfASortedArray {
 
     public static void main(String[] args) {
         System.out.println(Arrays.toString(new SquaresOfASortedArray().sortedSquares(new int[]{-1, -2, -3, 0, 3, 6, 8})));
+        Boolean b = null;
+
+        if (!b) System.out.println("a");
     }
 }
